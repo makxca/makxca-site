@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vite-react-deployment
+  labels:
+    app: vite-react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vite-react
+  template:
+    metadata:
+      labels:
+        app: vite-react
+    spec:
+      containers:
+      - name: vite-react
+        image: makxca/makxca-site:react-vite
+        ports:
+        - containerPort: 3000
+        env:
+        - name: PORT
+          valueFrom:
+            configMapKeyRef:
+              name: vite-react-config
+              key: PORT
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vite-react-service
+spec:
+  type: NodePort
+  selector:
+    app: vite-react
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 30000

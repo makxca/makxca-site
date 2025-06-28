@@ -1,0 +1,12 @@
+{
+  "name": "makxca-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deps": "pnpm i --frozen-lockfile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
