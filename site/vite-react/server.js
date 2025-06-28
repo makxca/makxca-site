@@ -6,7 +6,9 @@ const port = process.env.PORT || 3000;
 const distDir = './dist';
 
 const server = http.createServer((req, res) => {
-  const filePath = path.join(distDir, req.url === '/' ? 'index.html' : req.url);
+  const cutUrl = req.url.replace(/\/vite-react\/?/, '/');
+  const isAssets = cutUrl.startsWith('/assets');
+  const filePath = path.join(distDir, isAssets ? cutUrl : 'index.html');
   fs.readFile(filePath, (err, content) => {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/html' });
