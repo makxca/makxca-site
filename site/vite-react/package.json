@@ -1,7 +1,7 @@
 {
   "name": "vite-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,8 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deps": "pnpm i --frozen-lockfile",
-    "docker:build": "docker build . -t makxca/makxca-site:react-vite --platform linux/amd64",
-    "docker:push": "docker push makxca/makxca-site:react-vite"
+    "docker": "sh dockerpush.sh"
   },
   "dependencies": {
     "react": "^19.1.0",
