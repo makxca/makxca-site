@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deps": "pnpm i --frozen-lockfile"
+    "deps": "pnpm i --frozen-lockfile",
+    "deploy:nginx": "sh ./ci/deployNginx.sh",
+    "upload:public": "sh ./ci/uploadPublic.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makxca/makxca-site.git"
   },
   "keywords": [],
   "author": "",

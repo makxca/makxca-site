@@ -15,16 +15,16 @@ spec:
         app: vite-react
     spec:
       containers:
-      - name: vite-react
-        image: makxca/makxca-site:react-vite1.0.1
-        ports:
-        - containerPort: 3000
-        env:
-        - name: PORT
-          valueFrom:
-            configMapKeyRef:
-              name: vite-react-config
-              key: PORT
+        - name: vite-react
+          image: makxca/makxca-site:react-vite1.0.4
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: vite-react-config
+                  key: PORT
 ---
 apiVersion: v1
 kind: Service
