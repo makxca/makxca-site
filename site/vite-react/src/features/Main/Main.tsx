@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './icon/react.svg'
-import viteLogo from './icon/vite.svg'
-import './App.css'
+import reactLogo from './../../shared/icon/react.svg'
+import viteLogo from './../../shared/icon/vite.svg'
+import './Main.css'
 
-function App() {
+function Main() {
   const [count, setCount] = useState(0)
 
   return (
@@ -22,7 +22,7 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/Main.tsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default Main

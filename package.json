@@ -6,7 +6,8 @@
   "scripts": {
     "deps": "pnpm i --frozen-lockfile",
     "deploy:nginx": "sh ./ci/deployNginx.sh",
-    "upload:public": "sh ./ci/uploadPublic.sh"
+    "upload:public": "sh ./ci/uploadPublic.sh",
+    "dev": "pnpm --filter public run serve"
   },
   "repository": {
     "type": "git",

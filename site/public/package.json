@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Public files are stored here",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "serve": "serve . -p 3010"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
