@@ -19,6 +19,7 @@
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
+    "eslint-plugin-import": "^2.32.0",
     "@eslint/js": "^9.29.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",

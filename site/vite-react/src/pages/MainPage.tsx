@@ -1,11 +1,13 @@
+import { Header } from '../features/Header'
 import Main from '../features/Main/Main'
 
 function MainPage() {
-  return (
-    <>
-      <Main />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <Main />
+        </>
+    )
 }
 
 export default MainPage
