@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import reactLogo from './../../shared/icon/react.svg'
-import viteLogo from './../../shared/icon/vite.svg'
+import reactLogo from './../../shared/ui/icon/react.svg'
+import viteLogo from './../../shared/ui/icon/vite.svg'
 import './Main.css'
 
 function Main() {
@@ -19,7 +19,7 @@ function Main() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button onClick={() => setCount(count => count + 1)}>
+                <button onClick={() => setCount(count => count + 1)} className="counter">
           count is {count}
                 </button>
                 <p>

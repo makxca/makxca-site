@@ -2,4 +2,56 @@
   min-height: 50px;
   box-sizing: border-box;
   padding: 10px;
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  ul {
+    list-style: none;
+  }
+
+  > * {
+    vertical-align: middle;
+  }
+
+  .menuButton {
+    background: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    height: 32px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .menuList {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .navigation {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+    gap: 10px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 }

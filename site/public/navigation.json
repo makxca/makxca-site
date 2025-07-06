@@ -1,0 +1,10 @@
+[
+  {
+    "url": "/",
+    "label": "main"
+  },
+  {
+    "url": "/about",
+    "label": "about"
+  }
+]
