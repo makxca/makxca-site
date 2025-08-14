@@ -1,5 +1,18 @@
 {
   "contents": "Contents",
   "main": "Main",
-  "about": "About"
+  "about": "About Site",
+  "selectLanguage": "Select Language",
+
+  "viteReactUsed": "This page has been developed with React and Vite.",
+  "sourceCodeAvailableOn": "The source code is available on",
+  "clickLogosToLearnMoreAboutViteAndReact": "You can click on the logos to learn more about Vite and React.",
+
+  "aboutSite": "About Site",
+  "siteIdea": "The idea of&nbsp;this site is&nbsp;to&nbsp;try all possible technologies with which websites can be&nbsp;developed and deployed (and, possibly in&nbsp;future, tested). Look in&nbsp;the menu at&nbsp;the top left of&nbsp;the screen for other technologies with which this site was developed&nbsp;&mdash; I&nbsp;hope, you will find it&nbsp;interesting.",
+  "deploymentTechnology": "Site deployment technologies",
+  "deploymentTechnologyDescription": "[Docker](https://www.docker.com) and [Kubernetes](https://kubernetes.io) are used to&nbsp;deploy the site. Individual backends, which are used to&nbsp;serve parts of&nbsp;the site, are put inside a&nbsp;Docker container, then the container is&nbsp;uploaded to&nbsp;the Docker Hub, and the link to&nbsp;the image is&nbsp;added to&nbsp;the Kubernetes configuration. The server hosting Kubernetes is&nbsp;hosted in&nbsp;[Yandex Cloud](https://yandex.cloud). The domain was purchased on&nbsp;[reg.ru](https://reg.ru).\n\nThere are plans to&nbsp;use GitHub Actions to&nbsp;make releases easier.",
+
+  "aboutAuthor": "About developer",
+  "aboutAuthorDescription": "My&nbsp;name is&nbsp;Max. I&rsquo;ve been into full stack development since 2022, when I&nbsp;got to&nbsp;know it&nbsp;at&nbsp;the [university](https://mephi.ru). It&nbsp;inspires me&nbsp;to&nbsp;design and develop websites and servers, because I&nbsp;know that real people will use it.\n\nIn my&nbsp;free time, I&rsquo;m a&nbsp;mountaineer and a&nbsp;guitarist :)\n\nYou can find more of&nbsp;my&nbsp;projects on&nbsp;[GitHub](https://github.com/makxca)"
 }
