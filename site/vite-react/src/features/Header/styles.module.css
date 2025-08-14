@@ -54,4 +54,13 @@
     display: flex;
     align-items: center;
   }
+
+  .active {
+    color: #e529e5;
+  }
+
+  .dropdownTitle {
+    margin-top: 0;
+    white-space: nowrap;
+  }
 }

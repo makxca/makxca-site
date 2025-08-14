@@ -1,0 +1,1 @@
+export { AboutComposition } from './AboutComposition'

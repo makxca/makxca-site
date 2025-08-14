@@ -1,0 +1,13 @@
+.dropdown {
+  position: relative;
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;  
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+}

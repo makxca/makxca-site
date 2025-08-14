@@ -1,11 +1,14 @@
 import { useState } from 'react'
 
+import { useTranslation } from '../../shared/lib/TranslationContext'
 import reactLogo from './../../shared/ui/icon/react.svg'
 import viteLogo from './../../shared/ui/icon/vite.svg'
 import './Main.css'
 
 function Main() {
     const [count, setCount] = useState(0)
+
+    const { translations } = useTranslation()
 
     return (
         <div className="main">
@@ -22,12 +25,11 @@ function Main() {
                 <button onClick={() => setCount(count => count + 1)} className="counter">
           count is {count}
                 </button>
-                <p>
-          Edit <code>src/Main.tsx</code> and save to test HMR
-                </p>
             </div>
             <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+                {translations.viteReactUsed}<br/>
+                {translations.sourceCodeAvailableOn} <a href="https://github.com/makxca/makxca-site/tree/main/site/vite-react">GitHub</a>.<br/>
+                {translations.clickLogosToLearnMoreAboutViteAndReact}
             </p>
         </div>
     )

@@ -1,5 +1,18 @@
 {
   "contents": "Содержание",
   "main": "Главная",
-  "about": "О сайте"
+  "about": "О сайте",
+  "selectLanguage": "Выберите язык",
+
+  "viteReactUsed": "Данная страница сверстана с использованием React и сборщика Vite.",
+  "sourceCodeAvailableOn": "Исходный код доступен на",
+  "clickLogosToLearnMoreAboutViteAndReact": "Вы можете нажать на логотипы, чтобы узнать подробнее про Vite и React.",
+
+  "aboutSite": "О сайте",
+  "siteIdea": "Идея этого сайта в&nbsp;том, чтобы попробовать все возможные технологии, на&nbsp;которых могут быть написаны и&nbsp;развернуты (а&nbsp;в&nbsp;будущем, возможно, ещё и&nbsp;протестированы) веб-сайты. Посмотрите в&nbsp;меню слева вверху экрана другие технологии, на&nbsp;которых был написан этот сайт&nbsp;&mdash; возможно, вам это покажется интересным.",
+  "deploymentTechnology": "Технология развертки сайта",
+  "deploymentTechnologyDescription": "Для развертки сайта используется [Docker](https://www.docker.com) + [Kubernetes](https://kubernetes.io). Отдельные бекенды с&nbsp;частями сайта складываются в&nbsp;docker-контейнер, далее контейнер выкладывается в&nbsp;Docker Hub, и&nbsp;ссылка на&nbsp;образ добавляется в&nbsp;конфигурацию Kubernetes. Головной сервер с&nbsp;Kubernetes живет на&nbsp;хостинге в&nbsp;[Яндекс Облаке](https://yandex.cloud). Домен приобретен на&nbsp;[reg.ru](https://reg.ru).\n\nВ&nbsp;планах есть использование GitHub Actions, чтобы делать развертку по&nbsp;кнопке.",
+
+  "aboutAuthor": "О разработчике",
+  "aboutAuthorDescription": "Меня зовут Макс. Я&nbsp;занимаюсь фуллстек-разработкой с&nbsp;2022 года, когда познакомился с&nbsp;ней в&nbsp;[университете](https://mephi.ru). Меня вдохновляет верстать сайты и&nbsp;пилить API, потому что я&nbsp;знаю, что реальные люди будут этим пользоваться.\n\nВ&nbsp;свободное время я&nbsp;альпинист, гитарист и&nbsp;скалолаз :)\n\nБольше моих проектов у&nbsp;меня на&nbsp;[GitHub](https://github.com/makxca)"
 }
