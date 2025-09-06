@@ -8,9 +8,10 @@
     "dev": "pnpm run \"/dev:/\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "type-check": "tsc --noEmit",
     "preview": "vite preview",
     "deps": "pnpm i --frozen-lockfile",
-    "docker": "sh dockerpush.sh",
+    "docker": "sh ./ci/dockerpush.sh",
     "release": "sh ./ci/release.sh"
   },
   "dependencies": {
@@ -34,5 +35,5 @@
     "typescript-eslint": "^8.34.1",
     "vite": "^7.0.0"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }

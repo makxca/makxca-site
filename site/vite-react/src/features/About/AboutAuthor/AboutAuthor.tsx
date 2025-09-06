@@ -1,7 +1,7 @@
-import React from 'react';
 import { useTranslation } from '../../../shared/lib/TranslationContext'
 import { Text } from '../../../shared/ui/Text/Text'
-import classes from "./styles.module.css";
+
+import classes from './styles.module.css'
 
 export const AboutAuthor = () => {
     const { translations } = useTranslation()
