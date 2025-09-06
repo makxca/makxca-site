@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vite-react
-          image: makxca/makxca-site:react-vite1.0.4
+          image: makxca/makxca-site:react-vite1.0.5
           ports:
             - containerPort: 3000
           env:
