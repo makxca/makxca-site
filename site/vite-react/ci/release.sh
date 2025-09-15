@@ -39,5 +39,7 @@ pnpm build
 pnpm run docker
 
 # update k8s config
+scp -P $SSH_DEPLOY_PORT -r ../../kubernetes/vite-react-config.yaml $SSH_DEPLOY_ADDRESS:~/makxca-site/kubernetes/vite-react-config.yaml
+ssh $SSH_DEPLOY_ADDRESS -p $SSH_DEPLOY_PORT "kubectl apply -f ~/makxca-site/kubernetes/vite-react-config.yaml"
 scp -P $SSH_DEPLOY_PORT -r ../../kubernetes/vite-react.yaml $SSH_DEPLOY_ADDRESS:~/makxca-site/kubernetes/vite-react.yaml
 ssh $SSH_DEPLOY_ADDRESS -p $SSH_DEPLOY_PORT "kubectl apply -f ~/makxca-site/kubernetes/vite-react.yaml"

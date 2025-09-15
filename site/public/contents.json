@@ -2,5 +2,9 @@
   {
     "url": "/vite-react",
     "label": "React + Vite"
+  },
+  {
+    "url": "/flask",
+    "label": "Flask"
   }
 ]
