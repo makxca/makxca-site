@@ -1,0 +1,6 @@
+flask>=3
+flask-sqlalchemy
+requests
+load_dotenv
+cachetools
+waitress
