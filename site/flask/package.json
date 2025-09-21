@@ -2,5 +2,5 @@
   "name": "flask",
   "main": "app.py",
   "description": "Flask app for makxca-site",
-  "version": "1.0.3"
+  "version": "1.0.5"
 }

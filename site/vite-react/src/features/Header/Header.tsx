@@ -54,7 +54,7 @@ export const Header = () => {
                     <h3 className={classes.title}>{translations.contents}</h3>
                     {contents.map(({ url, label }) => (
                         <li key={url}>
-                            <a href={url} className={/vite-react/.test(window.location.pathname) ? classes.active : undefined}>{label}</a>
+                            <a href={`${url}/${language}`} className={(/vite-react/).test(url) ? classes.active : undefined}>{label}</a>
                         </li>
                     ))}
                 </ul>
@@ -79,7 +79,6 @@ export const Header = () => {
                     element: <Link to={`/vite-react/ru/${location.pathname.split('/').slice(3).join()}`}>Русский</Link>,
                 }]}
                 current={LanguageByLang[language]}
-                onChange={() => {}}
             >
                 <h3 className={classes.dropdownTitle}>{translations.selectLanguage}</h3>
             </Dropdown>

@@ -5,8 +5,10 @@
   "selectLanguage": "Select Language",
 
   "viteReactUsed": "This page has been developed with React and Vite.",
+  "flaskUsed": "This page has been developed with Flask and Python.",
   "sourceCodeAvailableOn": "The source code is available on",
   "clickLogosToLearnMoreAboutViteAndReact": "You can click on the logos to learn more about Vite and React.",
+  "clickLogosToLearnMoreAboutFlaskAndPython": "You can click on the logos to learn more about Flask and Python.",
 
   "aboutSite": "About Site",
   "siteIdea": "The idea of&nbsp;this site is&nbsp;to&nbsp;try all possible technologies with which websites can be&nbsp;developed and deployed (and, possibly in&nbsp;future, tested). Look in&nbsp;the menu at&nbsp;the top left of&nbsp;the screen for other technologies with which this site was developed&nbsp;&mdash; I&nbsp;hope, you will find it&nbsp;interesting.",

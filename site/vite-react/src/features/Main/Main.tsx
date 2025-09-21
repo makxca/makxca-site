@@ -26,7 +26,7 @@ function Main() {
           count is {count}
                 </button>
             </div>
-            <p className="read-the-docs">
+            <p>
                 {translations.viteReactUsed}<br/>
                 {translations.sourceCodeAvailableOn} <a href="https://github.com/makxca/makxca-site/tree/main/site/vite-react">GitHub</a>.<br/>
                 {translations.clickLogosToLearnMoreAboutViteAndReact}
