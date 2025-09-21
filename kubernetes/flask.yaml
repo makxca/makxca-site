@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: makxca/makxca-site:flask1.0.3
+          image: makxca/makxca-site:flask1.0.5
           ports:
             - containerPort: 3000
           env:

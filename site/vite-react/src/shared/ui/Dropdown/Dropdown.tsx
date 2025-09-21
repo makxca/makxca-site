@@ -9,7 +9,7 @@ export interface DropdownProps {
     key: string;
     element: React.ReactNode;
   }[];
-  onChange: (key: string) => void;
+  onChange?: (key: string) => void;
   current: React.ReactNode;
   children?: React.ReactNode;
 }
@@ -35,7 +35,7 @@ export const Dropdown = (props: DropdownProps) => {
             {visible && <ul ref={optionsRef} className={classes.menu}>
                 {children}
                 {options.map(option => (
-                    <li key={option.key} onClick={() => onChange(option.key)}>
+                    <li key={option.key} onClick={onChange && (() => onChange(option.key))}>
                         {option.element}
                     </li>
                 ))}

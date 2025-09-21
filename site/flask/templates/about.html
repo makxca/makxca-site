@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block body %}
+  {% include "components/_header.html" %}
+  <main class="about">
+      <article>
+          <h1>{{translations.aboutSite}}</h1>
+          <p>{{translations.siteIdea|markdown|safe}}</p>
+          <h2>{{translations.deploymentTechnology}}</h2>
+          <p>{{translations.deploymentTechnologyDescription|markdown|safe}}</p>
+      </article>
+      <article class="flex">
+          <h2>{{translations.aboutAuthor}}</h2>
+          <div class="textAndImage">
+              <div>{{translations.aboutAuthorDescription|markdown|safe}}</div>
+              <img src="/public/me.png" alt="Author" />
+          </div>
+      </article>
+  </main>
+{% endblock %}

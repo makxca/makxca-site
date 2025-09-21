@@ -4,3 +4,4 @@ requests
 load_dotenv
 cachetools
 waitress
+markdown

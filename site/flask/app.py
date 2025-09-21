@@ -3,23 +3,41 @@ from modules.public_service import PublicService
 import requests
 import os
 from dotenv import load_dotenv
+from markdown import markdown
 
 load_dotenv()
 
 publicService = PublicService(os.environ.get("PUBLIC_URL", "localhost:3010"))
 app = Flask(__name__, static_url_path='/flask/static')
 
-@app.route('/flask')
+def markdownFilter(s: str):
+    return markdown(s)
+
+app.add_template_filter(markdownFilter, "markdown") 
+
+@app.route('/flask/')
 def flaskRedirect():
     return redirect('/flask/en', 301)
 
 @app.route('/flask/<string:lang>')
-@app.route('/flask/<string:lang>/about')
-def index(lang: str):
+@app.route('/flask/<string:lang>/')
+def main(lang: str):
     translations = publicService.getPublicFile('/labels/' + lang + '.json')
     if (translations is None):
         return redirect('/flask/en')
-    return render_template('main.html', translations=translations)
+    contents = publicService.getPublicFile('/contents.json')
+    navigation = publicService.getPublicFile('/navigation.json')
+    return render_template('main.html', translations=translations, contents=contents, navigation=navigation, language=lang)
+
+@app.route('/flask/<string:lang>/about')
+@app.route('/flask/<string:lang>/about/')
+def about(lang: str):
+    translations = publicService.getPublicFile('/labels/' + lang + '.json')
+    if (translations is None):
+        return redirect('/flask/en')
+    contents = publicService.getPublicFile('/contents.json')
+    navigation = publicService.getPublicFile('/navigation.json')
+    return render_template('about.html', translations=translations, contents=contents, navigation=navigation, language=lang)
 
 # proxy for public in localdev
 @app.route('/flask/public/<path:path>')

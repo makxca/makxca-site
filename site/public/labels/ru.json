@@ -5,8 +5,10 @@
   "selectLanguage": "Выберите язык",
 
   "viteReactUsed": "Данная страница сверстана с использованием React и сборщика Vite.",
+  "flaskUsed": "Данная страница сверстана с использованием фреймворка Flask для Python.",
   "sourceCodeAvailableOn": "Исходный код доступен на",
-  "clickLogosToLearnMoreAboutViteAndReact": "Вы можете нажать на логотипы, чтобы узнать подробнее про Vite и React.",
+  "clickLogosToLearnMoreAboutViteAndReact": "Вы можете нажать на логотипы, чтобы узнать больше о Vite и React.",
+  "clickLogosToLearnMoreAboutFlaskAndPython": "Вы можете нажать на логотипы, чтобы узнать больше о Flask и Python.",
 
   "aboutSite": "О сайте",
   "siteIdea": "Идея этого сайта в&nbsp;том, чтобы попробовать все возможные технологии, на&nbsp;которых могут быть написаны и&nbsp;развернуты (а&nbsp;в&nbsp;будущем, возможно, ещё и&nbsp;протестированы) веб-сайты. Посмотрите в&nbsp;меню слева вверху экрана другие технологии, на&nbsp;которых был написан этот сайт&nbsp;&mdash; возможно, вам это покажется интересным.",
