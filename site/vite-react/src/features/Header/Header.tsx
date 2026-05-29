@@ -64,7 +64,7 @@ export const Header = () => {
                     <ul className={classes.navigation}>
                         {navigationConfig.map(({ url, label }) => (
                             <li key={url}>
-                                <Link to={`/vite-react/${language}${url}`} className={clsx(new RegExp(`/vite-react/${language}${url}$`).test(window.location.pathname) ? classes.active : undefined)}>{translations[label]}</Link>
+                                <Link to={`/vite-react/${language}${url}`} className={clsx(new RegExp(`/vite-react/${language}${url.replace(/\/$/, '')}$`).test(window.location.pathname.replace(/\/$/, '')) ? classes.active : undefined)}>{translations[label]}</Link>
                             </li>
                         ))}
                     </ul>

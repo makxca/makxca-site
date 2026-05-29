@@ -76,7 +76,7 @@
 
     const navigationLinks = document.querySelectorAll('#header-navigation a');
     navigationLinks.forEach(link => {
-      if (window.location.pathname === link.getAttribute('href')) {
+      if (window.location.pathname.replace(/\/$/, '') === link.getAttribute('href').replace(/\/$/, '')) {
         link.classList.add('active');
       }
     });

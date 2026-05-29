@@ -28,3 +28,6 @@ __pycache__/
 venv/
 *.egg-info/
 .cache/
+
+# DB
+*.sqlite

@@ -8,7 +8,7 @@ dev-global:
 dev-global-stop:
 	lsof -i :3010 | grep -oE "node *\d+" | grep -oE "\d+" | xargs kill -9
 dev:
-	python3 app.py
+	(virtualenv env || true) && source env/bin/activate && python3 app.py
 
 preview:
 	waitress-serve --host 127.0.0.1 --port=3000 app:app
