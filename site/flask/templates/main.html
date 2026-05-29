@@ -16,10 +16,24 @@
         </a>
     </div>    
     <h1>Flask</h1>
+    <button id="counter" type="button">count is {{counter}}</button>
     <p>
         {{translations.flaskUsed}}<br/>
         {{translations.sourceCodeAvailableOn}} <a href="https://github.com/makxca/makxca-site/tree/main/site/flask">GitHub</a>.<br/>
         {{translations.clickLogosToLearnMoreAboutFlaskAndPython}}
     </p>
   </main>
+
+  <script>
+    function incCount() {
+      fetch('/flask/counter', {
+        method: 'POST',
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.querySelector('#counter').innerText = 'count is ' + data.count;
+      });
+    }
+    document.querySelector('#counter').addEventListener('click', incCount);
+  </script>
 {% endblock %}
